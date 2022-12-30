@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./img/encryption.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-nav">
+        <nav class="navbar">
+            <img src="./img/Vector.svg" alt="logo_alura" class="nav-brand">
+        </nav>
+    </div>
+    <div class="container-txts">
+        <div class="input-text">
+            <div class="entry">
+                <textarea class="text-in" cols="30" rows="10" placeholder="Ingrese el texto aquí" id="text-in" onkeypress="return soloLetras(event)"></textarea>
+                <div class="info">
+                    <img src="./img/advertencia.png" alt="hint-input" class="icon-hint">
+                    Solo letras minúsculas y sin acentos
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="encrypt-button" id="encrypt-button">Encriptar</button>
+                <button class="decrypt-button" id="decrypt-button">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-text" id="output-text">
+            <img src="./img/Muñeco.svg" alt="img_no_content" width="100" id="graph">
+            <h2 style="text-align: center;" id="titulo">Ningun Mensaje fue encontrado</h2>
+            <p style="text-align: center;" id="final-text" class="final-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            <button class="copy-button" id="copy-button">Copiar</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Desarrollado por Santiago Armijos</p>
+        <div class="enlaces">
+            <p>Puedes seguirme en:</p>
+          
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="./scripts/app.js"></script>
+</body>
+
+</html>
